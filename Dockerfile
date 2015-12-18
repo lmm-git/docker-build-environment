@@ -11,6 +11,7 @@ RUN apt-get update \
     && apt-get -y install \
         git \
         build-essential \
+        pyflakes \
 	curl \
 #clean up
     && apt-get clean \

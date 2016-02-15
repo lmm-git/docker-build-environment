@@ -14,6 +14,7 @@ RUN apt-get update \
 		pyflakes \
 		curl \
 		php5 \
+		php5-gd \
 #clean up
 	&& apt-get clean \
 	&& rm -rf /var/lib/apt/lists/*

@@ -12,6 +12,14 @@ RUN apt-get update \
 		git \
 		build-essential \
 		pyflakes \
+		make \
+		cmake \
+		libnetfilter-queue-dev \
+		gcc \
+		g++ \
+		libcurlpp-dev \
+		libcurl4-openssl-dev \
+		libjson0 libjson0-dev \
 		curl \
 		php5 \
 		php5-gd \

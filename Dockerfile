@@ -17,6 +17,7 @@ RUN apt-get update \
 		libnetfilter-queue-dev \
 		gcc \
 		g++ \
+		cppcheck \
 		libcurlpp-dev \
 		libcurl4-openssl-dev \
 		libjson0 libjson0-dev \

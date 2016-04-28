@@ -25,6 +25,7 @@ RUN apt-get update \
 		php \
 		php-gd \
 		openjdk-8-jdk \
+		gradle \
 #clean up
 	&& apt-get clean \
 	&& rm -rf /var/lib/apt/lists/*

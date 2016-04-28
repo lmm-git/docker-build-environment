@@ -24,6 +24,7 @@ RUN apt-get update \
 		curl \
 		php5 \
 		php5-gd \
+		openjdk-8-jdk \
 #clean up
 	&& apt-get clean \
 	&& rm -rf /var/lib/apt/lists/*

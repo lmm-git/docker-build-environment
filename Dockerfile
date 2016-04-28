@@ -1,4 +1,4 @@
-FROM debian:stable
+FROM ubuntu:latest
 
 MAINTAINER Leonard Marschke <github@marschke.me>
 
@@ -22,8 +22,8 @@ RUN apt-get update \
 		libcurl4-openssl-dev \
 		libjson0 libjson0-dev \
 		curl \
-		php5 \
-		php5-gd \
+		php \
+		php-gd \
 		openjdk-8-jdk \
 #clean up
 	&& apt-get clean \

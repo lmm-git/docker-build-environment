@@ -33,6 +33,8 @@ RUN apt-get update \
 		gradle \
 # other important packages
 		fuse \
+# filesystem test suite
+		fio \
 # clean up
 	&& apt-get clean \
 	&& rm -rf /var/lib/apt/lists/*

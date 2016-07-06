@@ -33,6 +33,7 @@ RUN apt-get update \
 		gradle \
 # other important packages
 		fuse \
+		softhsm2 \
 # clean up
 	&& apt-get clean \
 	&& rm -rf /var/lib/apt/lists/*

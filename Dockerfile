@@ -33,6 +33,7 @@ RUN apt-get update \
 		gradle \
 # other important packages
 		fuse \
+		wget \
 # filesystem test suite
 		fio \
 # clean up

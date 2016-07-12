@@ -36,6 +36,10 @@ RUN apt-get update \
 		wget \
 # filesystem test suite
 		fio \
+# gource
+		gource \
+		libav-tools \
+		xvfb \
 # clean up
 	&& apt-get clean \
 	&& rm -rf /var/lib/apt/lists/*

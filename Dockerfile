@@ -39,6 +39,7 @@ RUN apt-get update \
 # gource
 		gource \
 		libav-tools \
+		imagemagick \
 		xvfb \
 		libwww-perl \
 # clean up

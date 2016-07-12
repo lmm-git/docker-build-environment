@@ -40,6 +40,7 @@ RUN apt-get update \
 		gource \
 		libav-tools \
 		xvfb \
+		libwww-perl \
 # clean up
 	&& apt-get clean \
 	&& rm -rf /var/lib/apt/lists/*

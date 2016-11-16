@@ -36,6 +36,8 @@ RUN apt-get update \
 		wget \
 # filesystem test suite
 		fio \
+# Docker
+		docker.io \
 # clean up
 	&& apt-get clean \
 	&& rm -rf /var/lib/apt/lists/*

@@ -25,6 +25,8 @@ RUN apt-get update \
 		libcurl4-openssl-dev \
 		libjson0 libjson0-dev \
 		curl \
+		libssl-dev \
+		librtmp-dev \
 # PHP
 		php \
 		php-gd \

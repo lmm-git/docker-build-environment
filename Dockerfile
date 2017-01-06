@@ -40,6 +40,8 @@ RUN apt-get update \
 		fio \
 # Docker
 		docker.io \
+# yasm (needed e.g. for ffmpeg)
+		yasm \
 # clean up
 	&& apt-get clean \
 	&& rm -rf /var/lib/apt/lists/*

@@ -42,6 +42,8 @@ RUN apt-get update \
 		docker.io \
 # yasm (needed e.g. for ffmpeg)
 		yasm \
+# fabric (deployment tool)
+		fabric \
 # clean up
 	&& apt-get clean \
 	&& rm -rf /var/lib/apt/lists/*

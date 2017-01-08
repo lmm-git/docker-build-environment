@@ -14,6 +14,7 @@ RUN apt-get update \
 		build-essential \
 # python
 		pyflakes \
+		python-requests \
 # C/C++
 		make \
 		cmake \

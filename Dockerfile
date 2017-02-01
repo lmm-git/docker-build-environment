@@ -15,6 +15,8 @@ RUN apt-get update \
 # python
 		pyflakes \
 		python-requests \
+		python3-pip \
+		python-pip \
 # C/C++
 		make \
 		cmake \

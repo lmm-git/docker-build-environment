@@ -17,6 +17,7 @@ RUN apt-get update \
 		python-requests \
 		python3-pip \
 		python-pip \
+		python3-psycopg2 \
 # C/C++
 		make \
 		cmake \

@@ -18,6 +18,7 @@ RUN apt-get update \
 		python3-pip \
 		python-pip \
 		python3-psycopg2 \
+		libffi-dev \
 # C/C++
 		make \
 		cmake \

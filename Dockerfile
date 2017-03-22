@@ -2,6 +2,9 @@ FROM ubuntu:latest
 
 MAINTAINER Leonard Marschke <github@marschke.me>
 
+# Set pythonunbuffered for getting better outputs in combination with GitLab CI
+ENV PYTHONUNBUFFERED=1
+
 # update software repos
 RUN apt-get update \
 # ugrade software

@@ -52,6 +52,8 @@ RUN apt-get update \
 		yasm \
 # fabric (deployment tool)
 		fabric \
+# documentation creation \
+		pandoc \
 # clean up
 	&& apt-get clean \
 	&& rm -rf /var/lib/apt/lists/*

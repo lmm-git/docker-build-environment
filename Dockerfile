@@ -1,4 +1,4 @@
-FROM ubuntu:latest
+FROM ubuntu:bionic
 
 MAINTAINER Leonard Marschke <github@marschke.me>
 
@@ -9,9 +9,28 @@ ENV PYTHONUNBUFFERED=1
 ENV LANG C.UTF-8
 ENV LC_ALL C.UTF-8
 
-# update software repos
+# install build dependencies
 RUN apt-get update \
 # ugrade software
+	&& apt-get -y upgrade \
+	&& apt-get -y install apt-transport-https \
+		ca-certificates \
+		curl \
+		software-properties-common \
+# clean up
+	&& apt-get clean \
+	&& rm -rf /var/lib/apt/lists/*
+
+# Prepare docker-ce installation
+RUN curl -fsSL https://download.docker.com/linux/ubuntu/gpg | apt-key add -
+RUN add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) edge" \
+# clean up
+	&& apt-get clean \
+	&& rm -rf /var/lib/apt/lists/*
+
+# update software repos
+RUN apt-get update \
+# upgrade software
 	&& apt-get -y upgrade \
 	&& apt-get -y install apt-utils \
 # install some useful tools need to build grml (git is needed to use with gitlab ci)
@@ -35,7 +54,7 @@ RUN apt-get update \
 		cppcheck \
 		libcurlpp-dev \
 		libcurl4-openssl-dev \
-		libjson0 libjson0-dev \
+		libjson-c3 libjson-c-dev \
 		curl \
 		libssl-dev \
 		librtmp-dev \
@@ -51,7 +70,7 @@ RUN apt-get update \
 # filesystem test suite
 		fio \
 # Docker
-		docker.io \
+		docker-ce \
 # yasm (needed e.g. for ffmpeg)
 		yasm \
 # fabric (deployment tool)

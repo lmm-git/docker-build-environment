@@ -5,6 +5,9 @@ MAINTAINER Leonard Marschke <github@marschke.me>
 # Set pythonunbuffered for getting better outputs in combination with GitLab CI
 ENV PYTHONUNBUFFERED=1
 
+# Set noninteractive environment
+ENV DEBIAN_FRONTEND=noninteractive
+
 # Set language environment to UTF-8
 ENV LANG C.UTF-8
 ENV LC_ALL C.UTF-8

@@ -80,6 +80,8 @@ RUN apt-get update \
 		fabric \
 # documentation creation \
 		pandoc \
+# deployment
+		rsync \
 # clean up
 	&& apt-get clean \
 	&& rm -rf /var/lib/apt/lists/*

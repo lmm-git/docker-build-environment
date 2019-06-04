@@ -70,6 +70,7 @@ RUN apt-get update \
 # other important packages
 		fuse \
 		wget \
+		netcat \
 # filesystem test suite
 		fio \
 # Docker

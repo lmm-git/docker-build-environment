@@ -71,6 +71,8 @@ RUN apt-get update \
 		fuse \
 		wget \
 		netcat \
+# nmap is installed instead of ncat on newer versions of Ubuntu
+		nmap \
 # filesystem test suite
 		fio \
 # Docker

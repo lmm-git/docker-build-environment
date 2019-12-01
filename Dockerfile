@@ -85,6 +85,8 @@ RUN apt-get update \
 		pandoc \
 # deployment
 		rsync \
+# pgsql client lib
+		postgresql-client-common \
 # clean up
 	&& apt-get clean \
 	&& rm -rf /var/lib/apt/lists/*

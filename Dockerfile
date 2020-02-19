@@ -14,11 +14,12 @@ ENV LC_ALL C.UTF-8
 
 # install build dependencies
 RUN apt-get update \
-# ugrade software
+# upgrade software
 	&& apt-get -y upgrade \
 	&& apt-get -y install apt-transport-https \
 		ca-certificates \
 		curl \
+		dnsutils \
 		software-properties-common \
 # clean up
 	&& apt-get clean \

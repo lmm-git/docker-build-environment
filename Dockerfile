@@ -21,6 +21,7 @@ RUN apt-get update \
 		curl \
 		dnsutils \
 		software-properties-common \
+		iputils-ping \
 # clean up
 	&& apt-get clean \
 	&& rm -rf /var/lib/apt/lists/*

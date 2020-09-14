@@ -88,6 +88,7 @@ RUN apt-get update \
 		pandoc \
 # deployment
 		rsync \
+		zstd \
 # pgsql client lib
 		postgresql-client-common \
 # clean up

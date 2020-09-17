@@ -51,6 +51,9 @@ RUN apt-get update \
 		python-pip \
 		python3-psycopg2 \
 		libffi-dev \
+		dh-python \
+		python3-all \
+		python3-stdeb \
 # C/C++
 		make \
 		cmake \
@@ -64,6 +67,7 @@ RUN apt-get update \
 		curl \
 		libssl-dev \
 		librtmp-dev \
+		fakeroot \
 # PHP
 		php \
 		php-gd \

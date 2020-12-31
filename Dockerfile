@@ -1,4 +1,4 @@
-FROM ubuntu:bionic
+FROM ubuntu:focal
 
 MAINTAINER Leonard Marschke <github@marschke.me>
 
@@ -46,9 +46,8 @@ RUN apt-get update \
 		build-essential \
 # python
 		pyflakes \
-		python-requests \
+		python3-requests \
 		python3-pip \
-		python-pip \
 		python3-psycopg2 \
 		libffi-dev \
 		dh-python \
@@ -63,7 +62,7 @@ RUN apt-get update \
 		cppcheck \
 		libcurlpp-dev \
 		libcurl4-openssl-dev \
-		libjson-c3 libjson-c-dev \
+		libjson-c4 libjson-c-dev \
 		curl \
 		libssl-dev \
 		librtmp-dev \

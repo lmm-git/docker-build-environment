@@ -1,4 +1,4 @@
-FROM ubuntu:focal
+FROM ubuntu:groovy
 
 MAINTAINER Leonard Marschke <github@marschke.me>
 
@@ -29,7 +29,7 @@ RUN apt-get update \
 
 # Prepare docker-ce installation
 RUN curl -fsSL https://download.docker.com/linux/ubuntu/gpg | apt-key add -
-RUN add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) edge" \
+RUN add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable" \
 # clean up
 	&& apt-get clean \
 	&& rm -rf /var/lib/apt/lists/*
@@ -45,7 +45,6 @@ RUN apt-get update \
 		git \
 		build-essential \
 # python
-		pyflakes \
 		python3-requests \
 		python3-pip \
 		python3-psycopg2 \
@@ -62,7 +61,7 @@ RUN apt-get update \
 		cppcheck \
 		libcurlpp-dev \
 		libcurl4-openssl-dev \
-		libjson-c4 libjson-c-dev \
+		libjson-c5 libjson-c-dev \
 		curl \
 		libssl-dev \
 		librtmp-dev \
@@ -71,7 +70,7 @@ RUN apt-get update \
 		php \
 		php-gd \
 # Java
-		openjdk-8-jdk \
+		openjdk-11-jdk \
 		gradle \
 # other important packages
 		fuse \
@@ -94,6 +93,10 @@ RUN apt-get update \
 		zstd \
 # pgsql client lib
 		postgresql-client-common \
+# cage
+		meson \
+		ninja-build \
+		libwlroots-dev \
 # clean up
 	&& apt-get clean \
 	&& rm -rf /var/lib/apt/lists/*

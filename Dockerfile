@@ -62,6 +62,7 @@ RUN apt-get update \
 		libcurlpp-dev \
 		libcurl4-openssl-dev \
 		libjson-c5 libjson-c-dev \
+		libpam-dev \
 		curl \
 		libssl-dev \
 		librtmp-dev \

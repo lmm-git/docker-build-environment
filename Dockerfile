@@ -98,6 +98,8 @@ RUN apt-get update \
 		meson \
 		ninja-build \
 		libwlroots-dev \
+# sqlite3
+		libsqlite3-dev \
 # clean up
 	&& apt-get clean \
 	&& rm -rf /var/lib/apt/lists/*

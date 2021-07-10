@@ -66,7 +66,6 @@ RUN apt-get update \
 		curl \
 		libssl-dev \
 		librtmp-dev \
-		fakeroot \
 # PHP
 		php \
 		php-gd \
@@ -94,10 +93,21 @@ RUN apt-get update \
 		zstd \
 # pgsql client lib
 		postgresql-client-common \
-# cage
-		meson \
-		ninja-build \
-		libwlroots-dev \
+# oidc-agent
+		libcurl4-openssl-dev \
+		libsodium-dev \
+		libseccomp-dev \
+		libmicrohttpd-dev \
+		libsecret-1-dev \
+# Debian packaging helpers
+		help2man \
+		check \
+		debhelper \
+		pkg-config \
+		perl \
+		sed \
+		fakeroot \
+		devscripts\
 # sqlite3
 		libsqlite3-dev \
 # clean up

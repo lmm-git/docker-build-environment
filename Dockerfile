@@ -22,6 +22,7 @@ RUN apt-get update \
 		dnsutils \
 		software-properties-common \
 		iputils-ping \
+		iproute2 \
 		vim \
 # clean up
 	&& apt-get clean \

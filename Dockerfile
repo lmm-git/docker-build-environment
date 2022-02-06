@@ -100,6 +100,9 @@ RUN apt-get update \
 		libseccomp-dev \
 		libmicrohttpd-dev \
 		libsecret-1-dev \
+		libcjson-dev \
+		libqrencode-dev \
+		quilt \
 # Debian packaging helpers
 		help2man \
 		check \

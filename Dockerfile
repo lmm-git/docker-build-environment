@@ -1,4 +1,4 @@
-FROM ubuntu:hirsute
+FROM ubuntu:impish
 
 MAINTAINER Leonard Marschke <github@marschke.me>
 
